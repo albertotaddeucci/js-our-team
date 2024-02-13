@@ -39,23 +39,17 @@ const teamMembers = [
 
 
 
-//variabile per stampa in pagina
-const membersElement = document.querySelector("div");
-
 
 //stampa in console delle varie proprietà degli oggetti
 for (i=0; i<teamMembers.length;i++){
     
     let actualMember = teamMembers[i];
-    let img = document.createElement("img")
 
-    membersElement.innerHTML += `${actualMember.nome} - ${actualMember.ruolo}`
 
-    
-    membersElement.append(img)
-    img.src += actualMember.foto
-    
-    membersElement.innerHTML += "<br>"
+    document.querySelector(`div:nth-of-type(${i+1}) h5`).innerHTML = `${actualMember.nome}`
+    document.querySelector(`div:nth-of-type(${i+1}) p`).innerHTML = `${actualMember.ruolo}`
+    document.querySelector(`div:nth-of-type(${i+1}) img`).src = `${actualMember.foto}`
+
     
 }
 
