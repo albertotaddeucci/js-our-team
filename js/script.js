@@ -1,9 +1,6 @@
 
 // Array di oggetti con le informazioni fornite.
 
-
-
-
 const teamMembers = [
     {
         nome: "Wayne Barnett",
@@ -47,7 +44,7 @@ for (i=0; i<teamMembers.length;i++){
 
 
     document.querySelector(`div:nth-of-type(${i+1}) h5`).innerHTML = `${actualMember.nome}`
-    document.querySelector(`div:nth-of-type(${i+1}) p`).innerHTML = `${actualMember.ruolo}`
+    document.querySelector(`div:nth-of-type(${i+1}) p.card-text`).innerHTML = `${actualMember.ruolo}`
     document.querySelector(`div:nth-of-type(${i+1}) img`).src = `${actualMember.foto}`
 
     
