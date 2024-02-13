@@ -45,7 +45,7 @@ for (i=0; i<teamMembers.length;i++){
     let cardElement = document.createElement("div");
     rowElement.append(cardElement);
 
-    cardElement.classList = "card bg-light-subtle"
+    cardElement.classList = "card mycard_color"
     cardElement.style = "width: 18rem;"
 
     //creazione img
@@ -80,6 +80,4 @@ for (i=0; i<teamMembers.length;i++){
     
 }
 
-
-//stilizzazione layout
 

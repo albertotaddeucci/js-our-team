@@ -1,0 +1,22 @@
+.poppins-extrabold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+
+body{
+    background-color: #C3E2C2;
+    
+}
+
+.mycard_color{
+    background-color: #EAECCC;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+h1{
+    color:#CD8D7A ;
+    
+}
