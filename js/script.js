@@ -33,16 +33,22 @@ const teamMembers = [
     }
 ];
 
+//variabile per stampa in pagina
+const membersElement = document.querySelector("div");
 
 //stampa in console delle varie proprietà degli oggetti
 for (i=0; i<teamMembers.length;i++){
 
     let actualMember = teamMembers[i];
 
+    //ciclo for-in per proprietà oggeto
     for (let key in actualMember){
-        console.log(`${key}: ${actualMember[key]}`);
+
+        membersElement.innerHTML += `<b>${key}:</b> ${actualMember[key]} `
         
     }
-    console.log("_______");
+    
+    membersElement.innerHTML += "<br>"
     
 }
+
