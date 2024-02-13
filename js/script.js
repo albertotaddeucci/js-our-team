@@ -32,3 +32,17 @@ const teamMembers = [
         foto:  "barbara-ramos-graphic-designer.jpg",
     }
 ];
+
+
+//stampa in console delle varie proprietà degli oggetti
+for (i=0; i<teamMembers.length;i++){
+
+    let actualMember = teamMembers[i];
+
+    for (let key in actualMember){
+        console.log(`${key}: ${actualMember[key]}`);
+        
+    }
+    console.log("_______");
+    
+}
