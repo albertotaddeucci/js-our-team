@@ -34,19 +34,52 @@ const teamMembers = [
     }
 ];
 
-
-
+const rowElement = document.getElementById("card-layout")
 
 //stampa in console delle varie proprietà degli oggetti
 for (i=0; i<teamMembers.length;i++){
-    
+
     let actualMember = teamMembers[i];
+    
+    //creazione card
+    let cardElement = document.createElement("div");
+    rowElement.append(cardElement);
+
+    cardElement.classList = "card bg-light-subtle"
+    cardElement.style = "width: 18rem;"
+
+    //creazione img
+    let imgElement = document.createElement("img");
+    cardElement.append(imgElement);
+    imgElement.src = actualMember.foto;
+
+    imgElement.classList = "card-img-top mt-2 rounded-3" 
+
+    // creazione div-card
+    let divElement = document.createElement("div");
+    cardElement.append(divElement);
+
+    divElement.classList = "card-body"
+
+    //creazione titolo(nome user)
+    let titleCard = document.createElement("h5");
+    divElement.append(titleCard);
+    titleCard.innerHTML = `${actualMember.nome}`
+
+    titleCard.classList = "card-title"
 
 
-    document.querySelector(`div:nth-of-type(${i+1}) h5`).innerHTML = `${actualMember.nome}`
-    document.querySelector(`div:nth-of-type(${i+1}) p.card-text`).innerHTML = `${actualMember.ruolo}`
-    document.querySelector(`div:nth-of-type(${i+1}) img`).src = `${actualMember.foto}`
+    //creazione sottotitolo (lavoro)
+    let jobTitle = document.createElement("p");
+    divElement.append(jobTitle);
+    jobTitle.innerHTML = `${actualMember.ruolo}`
 
+    jobTitle.classList = "card-text"
+
+    
     
 }
+
+
+//stilizzazione layout
 
