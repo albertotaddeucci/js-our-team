@@ -64,9 +64,9 @@ for (i=0; i<teamMembers.length;i++){
     //creazione titolo(nome user)
     let titleCard = document.createElement("h5");
     divElement.append(titleCard);
-    titleCard.innerHTML = `${actualMember.nome}`
+    titleCard.innerHTML = `${actualMember.nome} <br> <hr>`
 
-    titleCard.classList = "card-title"
+    titleCard.classList = "card-title text-center"
 
 
     //creazione sottotitolo (lavoro)
@@ -74,7 +74,7 @@ for (i=0; i<teamMembers.length;i++){
     divElement.append(jobTitle);
     jobTitle.innerHTML = `${actualMember.ruolo}`
 
-    jobTitle.classList = "card-text"
+    jobTitle.classList = "card-text text-center"
 
     
     
